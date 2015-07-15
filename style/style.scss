@@ -1,0 +1,27 @@
+@import 'variables.scss';
+
+body {
+	font-size: $font-size-base;
+  color: $color-standard;
+  background: $color-background;
+}
+.headline {
+	font-size: $font-size-headline;
+  color: $color-emphasis;
+}
+.byline {
+	font-size: $font-size-byline;
+  color: $color-standard;
+}
+.nav-item {
+	font-size: $font-size-standard;
+  color: $color-standard;
+}
+.body-copy {
+	font-size: $font-size-standard;
+  color: $color-standard;
+}
+.sub {
+	font-size: $font-size-subtext;
+  color: $color-weak;
+}
