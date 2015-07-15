@@ -8,3 +8,15 @@ $color-standard: black;
 $color-background: white;
 $color-emphasis: navy;
 $color-weak: darkgray;
+
+$body-margin: auto;
+
+// targets
+$device-phone: 320px;
+$device-tablet: 700px;
+$device-computer: 1200px;
+
+// wrapper targets
+$wrapper-phone: 85%;
+$wrapper-tablet: 90%;
+$wrapper-laptop: 960px;

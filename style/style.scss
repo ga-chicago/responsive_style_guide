@@ -4,6 +4,7 @@ body {
 	font-size: $font-size-base;
   color: $color-standard;
   background: $color-background;
+  margin: $body-margin;
 }
 .headline {
 	font-size: $font-size-headline;
@@ -16,6 +17,8 @@ body {
 .nav-item {
 	font-size: $font-size-standard;
   color: $color-standard;
+  display: block;
+  list-style: circle;
 }
 .body-copy {
 	font-size: $font-size-standard;
@@ -24,4 +27,66 @@ body {
 .sub {
 	font-size: $font-size-subtext;
   color: $color-weak;
+}
+#wrapper {
+  width: $wrapper-phone;
+  margin: auto;
+}
+
+// test devices
+#phone {
+  display: none;
+  background-color: aliceblue;
+}
+#tablet {
+  display: none;
+  background-color: lightslategray;
+}
+#laptop {
+  display: none;
+  background-color: magenta;
+}
+
+@media (min-width: $device-phone) {
+  #phone {
+    display: block;
+  }
+}
+
+@media (min-width: $device-tablet) {
+
+  .nav-item {
+    font-size: $font-size-standard;
+    color: $color-standard;
+    display: inline-block;
+    list-style: none;
+  }
+  #wrapper {
+    width: $wrapper-tablet;
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: block;
+  }
+
+}
+
+@media (min-width: $device-computer) {
+
+  #wrapper {
+    width: $wrapper-laptop;
+  }
+
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #laptop {
+    display: block;
+  }
 }

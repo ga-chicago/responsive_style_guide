@@ -1,7 +1,8 @@
 body {
   font-size: 16px;
   color: black;
-  background: white; }
+  background: white;
+  margin: auto; }
 
 .headline {
   font-size: 3rem;
@@ -13,7 +14,9 @@ body {
 
 .nav-item {
   font-size: 1rem;
-  color: black; }
+  color: black;
+  display: block;
+  list-style: circle; }
 
 .body-copy {
   font-size: 1rem;
@@ -22,5 +25,52 @@ body {
 .sub {
   font-size: 0.75rem;
   color: darkgray; }
+
+#wrapper {
+  width: 85%;
+  margin: auto; }
+
+#phone {
+  display: none;
+  background-color: aliceblue; }
+
+#tablet {
+  display: none;
+  background-color: lightslategray; }
+
+#laptop {
+  display: none;
+  background-color: magenta; }
+
+@media (min-width: 320px) {
+  #phone {
+    display: block; } }
+@media (min-width: 700px) {
+  .nav-item {
+    font-size: 1rem;
+    color: black;
+    display: inline-block;
+    list-style: none; }
+
+  #wrapper {
+    width: 90%; }
+
+  #phone {
+    display: none; }
+
+  #tablet {
+    display: block; } }
+@media (min-width: 1200px) {
+  #wrapper {
+    width: 960px; }
+
+  #phone {
+    display: none; }
+
+  #tablet {
+    display: none; }
+
+  #laptop {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
