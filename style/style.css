@@ -30,6 +30,10 @@ body {
   width: 85%;
   margin: auto; }
 
+.alert {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
 #phone {
   display: none;
   background-color: aliceblue; }

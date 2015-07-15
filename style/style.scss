@@ -32,6 +32,10 @@ body {
   width: $wrapper-phone;
   margin: auto;
 }
+.alert {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 // test devices
 #phone {
